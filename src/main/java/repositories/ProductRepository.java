@@ -5,7 +5,6 @@ import java.util.Collection;
 import java.util.Iterator;
 
 import model.Product;
-import model.Shelf;
 
 public class ProductRepository extends EntityRepository <Product> {
 

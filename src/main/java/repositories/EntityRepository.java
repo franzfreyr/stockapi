@@ -36,9 +36,9 @@ public abstract class EntityRepository <T extends Entity> {
 		return t.keySet();
 	}
 	
-	public void editEntity(T editEntity) {
+	public T editEntity(T editEntity) {
 		
-		t.put(editEntity.getId(),editEntity);
+		return t.put(editEntity.getId(),editEntity);
 	}
 	
 	public void removeEntity(int ID) {

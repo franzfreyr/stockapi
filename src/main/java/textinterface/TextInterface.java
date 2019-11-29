@@ -287,7 +287,7 @@ public class TextInterface {
 		System.out.println("in create");
 		System.out.println("producto criado");
 		p1.getListOfShelves().add(availableShelf);
-		dbs.getEntity(availableShelf).increaseNbrOfProds();
+		dbs.getEntity(availableShelf).setNumberOfProds(p1.getId());
 		dbp.createEntity(p1);
 		tempProd = null;
 		ecraInicio();

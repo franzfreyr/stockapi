@@ -17,13 +17,19 @@ public class ProductServices {
 	public int create(Product prod) {
 
 		return repo.createEntity(prod);
-
 	}
-	
-
-	public Product getOne(int id) {
+	public Product getId(int id) {
 		
 		return repo.getEntity(id);
+	}
+
+	public void remove(int id) {
+		repo.removeEntity(id);
+	}
+
+	public Product put(int id, Product product) {
+		
+		return repo.editEntity(product);
 	}
 
 }
