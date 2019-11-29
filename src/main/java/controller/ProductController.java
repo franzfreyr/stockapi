@@ -30,8 +30,10 @@ public class ProductController {
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.TEXT_PLAIN)
 	public int create(Product product) {
-
+		
+		
 		return service.create(product);
+		
 	}
 	
 	@GET
@@ -47,9 +49,8 @@ public class ProductController {
 	@Path("/{id}")
 	public void delete(@PathParam("id") int id) {
 		service.remove(id);
+	
 	}
-	
-	
 	
 	@PUT
 	@Path("/{id}")
