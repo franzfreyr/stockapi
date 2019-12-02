@@ -1,21 +1,15 @@
 package repositories;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
+import javax.enterprise.context.ApplicationScoped;
+
 import model.Shelf;
 
+@ApplicationScoped
 public class ShelfRepository extends EntityRepository <Shelf> {
 
-	private static final ShelfRepository INSTANCE = new ShelfRepository();
-	
-	private ShelfRepository() {
-	}
-	
-	public static ShelfRepository getInstance() {
-		return INSTANCE;
-	}
 	
 	
 	public int getAvailableShelf() {

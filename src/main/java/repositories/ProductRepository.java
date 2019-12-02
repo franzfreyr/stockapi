@@ -3,20 +3,12 @@ package repositories;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-
+import javax.enterprise.context.ApplicationScoped;
 import model.Product;
 
+@ApplicationScoped
 public class ProductRepository extends EntityRepository <Product> {
-
-	private static final ProductRepository INSTANCE = new ProductRepository();
 	
-	private ProductRepository() {
-		
-	}
-	
-	public static ProductRepository getInstance() {
-		return INSTANCE;
-	}
 	
 	public ArrayList<Product> getProductsInShlefID(int shelfId){
 		Collection<Product> t = getAllEntities(); // list of shelves (Shelf)
