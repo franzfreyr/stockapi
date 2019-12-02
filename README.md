@@ -14,3 +14,6 @@ ls - show current folder;
 
 
 todo: create specific logic for shelves & prods;
+
+
+maven - run as maven clean, run as maven install, server > add & remove.
