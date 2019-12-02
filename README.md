@@ -1,12 +1,13 @@
 # stockapi
 
 
-git add .
+git add . ;
 
-git commit -am "Mensagem update"
+git commit -am "Mensagem update";
 
-git push origin master
+git push origin master;
 
-git pull origin master
+git pull origin master;
 
-1212412
+cd - travel through folders;
+ls - show current folder;
