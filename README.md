@@ -11,3 +11,6 @@ git pull origin master;
 
 cd - travel through folders;
 ls - show current folder;
+
+
+todo: create specific logic for shelves & prods;
